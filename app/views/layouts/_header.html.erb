@@ -21,8 +21,9 @@
 		</ul>
 		 <ul class="nav pull-right">
       <% if user_signed_in? %>
-        <li><%= link_to "edit profile", edit_user_registration_path %></li>
-        <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
+        <li><%= link_to "Edit My Profile", edit_user_registration_path %></li>
+        <li><%= link_to "View My Pins", pins_path %></li>
+        <li><%= link_to "I'm Outta Here", destroy_user_session_path, method: :delete %></li>
       <% else %>
 	       <li><%= link_to "Login", new_user_session_path %></li>
          <li><%= link_to "Create New Account", new_user_registration_path %></li>
