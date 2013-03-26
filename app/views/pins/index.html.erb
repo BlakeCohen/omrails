@@ -1,5 +1,4 @@
-<% if user_signed_in? %>
-  <p><span class="label label-inverse">Here are your current pins:</span></p>
+<p><span class="label label-inverse">Here are your current pins:</span></p>
 
   <table class="table table-striped">
     <thead>
@@ -19,7 +18,7 @@
   <br />
 
   <%= link_to 'New Pin', new_pin_path, class: "btn btn-primary" %>
-<% else %>
+
   <%= link_to "Login to see your pins", new_user_session_path %> or
   <%= link_to "Not a member? Click here to Sign up", new_user_registration_path %>
-<% end %>
+
