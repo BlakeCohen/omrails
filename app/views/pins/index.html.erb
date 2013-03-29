@@ -1,20 +1,24 @@
 <p><span class="label label-inverse">Here are your current pins:</span></p>
 
-<table class="table table-striped">
-  <thead>
-    <tr>
+  <table class="table table-striped">
+    <thead>
+      <tr>
       <th>Description</th>
       <th></th>
       <th></th>
       <th></th>
-    </tr>
-  </thead>
+      </tr>
+    </thead>
 
-  <tbody>
-    <%= render @pins %>
-  <tbody>
-</table>
+    <tbody>
+      <%= render @pins %>
+    <tbody>
+  </table>
 
-<br />
+  <br />
 
-<%= link_to 'New Pin', new_pin_path, class: "btn btn-primary" %>
+  <%= link_to 'New Pin', new_pin_path, class: "btn btn-primary" %>
+
+  <%= link_to "Login to see your pins", new_user_session_path %> or
+  <%= link_to "Not a member? Click here to Sign up", new_user_registration_path %>
+
